@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glowing Radiance • System Status</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title">Glowing Radiance</h1>
+      <h2 class="subtitle">Divine System Status</h2>
+      <div class="hero-glow"></div>
+    </div>
+
+    <div class="floating-symbol">✶</div>
+    <div class="floating-symbol">✦</div>
+    <div class="floating-symbol">❂</div>
+  </section>
+
+  <!-- STATUS SECTION -->
+  <section class="status-section">
+    <h3 class="section-title">System Health</h3>
+    <div class="divider">𓁹</div>
+
+    <div class="status-card">
+      <div class="status-header">
+        <h4>API Endpoint</h4>
+        <span id="api-status-indicator" class="status-indicator"></span>
+      </div>
+      <p class="status-desc">Current status of the core API powering Glowing Radiance.</p>
+      <div class="status-result">
+        <span id="api-status-text">Checking...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h3 class="section-title">Service Overview</h3>
+    <div class="divider">✧✦✧</div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <h4>Authentication</h4>
+        <p>Handles login, tokens, and identity.</p>
+        <div class="service-status ok">Operational</div>
+      </div>
+
+      <div class="service-card">
+        <h4>Database</h4>
+        <p>Stores all persistent user data safely.</p>
+        <div class="service-status ok">Operational</div>
+      </div>
+
+      <div class="service-card">
+        <h4>Workers</h4>
+        <p>Background task automation & scheduling.</p>
+        <div class="service-status degraded">Slightly Delayed</div>
+      </div>
+
+      <div class="service-card">
+        <h4>CDN</h4>
+        <p>Edge delivery of Radiant static content.</p>
+        <div class="service-status ok">Operational</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIVE LOGS SECTION -->
+<section class="logs">
+  <h3 class="section-title">Live System Log</h3>
+  <div class="divider">𓆣 𓅓 𓆤</div>
+
+  <div class="log-container">
+    <div class="log-header">
+      <h4>Real-Time Worker Output</h4>
+      <button id="clear-log" class="clear-button">Clear</button>
+    </div>
+    <div id="log-stream" class="log-stream">
+      <div class="log-entry">⧉ Log initialized… awaiting new events…</div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    Made with ✶ divine energy ✶ © Glowing Radiance
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
