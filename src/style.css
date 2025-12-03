@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #fff9d9, #f7e07a);
+  color: #6a5300;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #cfa800;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+.status-card {
+  background: #fff8d1;
+  padding: 25px;
+  margin: 40px auto;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  border: 2px solid #e5c449;
+}
+
+.status-text {
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.status-icon {
+  width: 25px;
+  height: 25px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: gray;
+}
+
+.pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+footer {
+  margin-top: 60px;
+  color: #8a7300;
+  opacity: 0.6;
+}
